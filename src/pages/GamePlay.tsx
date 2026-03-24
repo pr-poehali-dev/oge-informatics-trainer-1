@@ -18,6 +18,10 @@ import CityRoutes from '@/games/CityRoutes';
 import NumberSystems from '@/games/NumberSystems';
 import FileDetective from '@/games/FileDetective';
 import TextSearch from '@/games/TextSearch';
+import Task13DataWork from '@/games/Task13DataWork';
+import Task14Algorithms from '@/games/Task14Algorithms';
+import Task15Programming from '@/games/Task15Programming';
+import Task16Advanced from '@/games/Task16Advanced';
 
 function GameComponent({ gameId, onFinish }: { gameId: GameId; onFinish: (r: Omit<GameResult, 'playedAt'>) => void }) {
   switch (gameId) {
@@ -33,6 +37,10 @@ function GameComponent({ gameId, onFinish }: { gameId: GameId; onFinish: (r: Omi
     case 'number-systems': return <NumberSystems onFinish={onFinish} />;
     case 'file-detective': return <FileDetective onFinish={onFinish} />;
     case 'text-search': return <TextSearch onFinish={onFinish} />;
+    case 'task13-data': return <Task13DataWork onFinish={onFinish} />;
+    case 'task14-algo': return <Task14Algorithms onFinish={onFinish} />;
+    case 'task15-prog': return <Task15Programming onFinish={onFinish} />;
+    case 'task16-adv': return <Task16Advanced onFinish={onFinish} />;
     default: return <div className="text-white">Игра не найдена</div>;
   }
 }

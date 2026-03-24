@@ -12,7 +12,11 @@ export type GameId =
   | 'city-routes'
   | 'number-systems'
   | 'file-detective'
-  | 'text-search';
+  | 'text-search'
+  | 'task13-data'
+  | 'task14-algo'
+  | 'task15-prog'
+  | 'task16-adv';
 
 export interface GameMeta {
   id: GameId;

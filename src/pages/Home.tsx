@@ -35,7 +35,7 @@ export default function Home() {
               по информатике
             </h1>
             <p className="text-white/60 text-lg mb-8 max-w-lg">
-              12 интерактивных мини-игр по всем темам экзамена. От новичка до эксперта — с нуля до уверенной пятёрки!
+              16 интерактивных мини-игр по всем темам экзамена — от объёма памяти до программирования на Python. От новичка до эксперта!
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <button onClick={() => navigate('/games')} className="btn-primary text-base px-8 py-4">
@@ -93,8 +93,8 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { icon: 'Gamepad2', label: 'Мини-игр', value: '12', color: '#8b5cf6' },
-            { icon: 'BookOpen', label: 'Тем ОГЭ', value: '12', color: '#06b6d4' },
+            { icon: 'Gamepad2', label: 'Мини-игр', value: '16', color: '#8b5cf6' },
+            { icon: 'BookOpen', label: 'Тем ОГЭ', value: '16', color: '#06b6d4' },
             { icon: 'Trophy', label: 'Твой рекорд', value: `${Math.max(0, ...Object.values(progress.bestScores))}`, color: '#f59e0b' },
             { icon: 'Flame', label: 'Серия дней', value: `${progress.streak}`, color: '#ec4899' },
           ].map((stat) => (

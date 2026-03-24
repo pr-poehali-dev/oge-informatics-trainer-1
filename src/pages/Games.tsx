@@ -28,9 +28,22 @@ export default function Games() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-3xl font-black text-white mb-2">Мини-игры</h1>
-        <p className="text-white/50">12 заданий ОГЭ по информатике — каждое в формате интерактивной игры</p>
+        <p className="text-white/50">16 заданий ОГЭ по информатике — каждое в формате интерактивной игры</p>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 mb-8">
+        <div className="card-glow rounded-2xl p-5 border border-purple-500/20">
+          <div className="text-purple-400 text-xs font-medium mb-2">📝 КРАТКИЕ ОТВЕТЫ</div>
+          <div className="text-white font-bold text-lg mb-1">Задания 1–12</div>
+          <div className="text-white/50 text-sm">Выбор из вариантов, числовые ответы, логические задачи</div>
+        </div>
+        <div className="card-glow rounded-2xl p-5 border border-amber-500/20">
+          <div className="text-amber-400 text-xs font-medium mb-2">🏆 РАЗВЁРНУТЫЕ ОТВЕТЫ</div>
+          <div className="text-white font-bold text-lg mb-1">Задания 13–16</div>
+          <div className="text-white/50 text-sm">Данные, алгоритмы, программирование, сложные задачи</div>
+        </div>
       </div>
 
       <div className="flex items-center gap-3 mb-8 flex-wrap">
